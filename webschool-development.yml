@@ -17,6 +17,7 @@ spring:
             authorization-grant-type: authorization_code
             scope : profile
             client-name : Login Client
+            redirect-uri-template : "{baseUrl}/login/oauth2/code/{registrationId}"
         provider:
           school-provider:
             authorization-uri: http://localhost:8762/securityproxy/oauth/authorize
