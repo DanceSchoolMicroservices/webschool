@@ -19,9 +19,9 @@ spring:
             client-name : Login Client
         provider:
           school-provider:
-            authorization-uri: http://localhost:8762/oauth/authorize
-            token-uri: http://localhost:8762/oauth/token
-            user-info-uri : http://localhost:8762/resources/userinfo
+            authorization-uri: http://localhost:8762/securityproxy/oauth/authorize
+            token-uri: http://localhost:8762/securityproxy/oauth/token
+            user-info-uri : http://localhost:8762/securityproxy/resources/userinfo
             user-name-attribute : name   
 
 eureka:
