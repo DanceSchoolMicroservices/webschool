@@ -5,6 +5,24 @@ spring:
   thymeleaf:
    cache: false
    mode: HTML
+  security:
+    oauth2:
+      client:
+        registration:
+          login-client:
+            provider: school-provider
+            client-id : client-school
+            client-secret : secret
+            client-authentication-method : basic
+            authorization-grant-type: authorization_code
+            scope : profile
+            client-name : Login Client
+        provider:
+          school-provider:
+            authorization-uri: http://localhost:8762/oauth/authorize
+            token-uri: http://localhost:8762/oauth/token
+            user-info-uri : http://localhost:8762/resources/userinfo
+            user-name-attribute : name   
 
 eureka:
   client:
