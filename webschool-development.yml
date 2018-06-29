@@ -13,7 +13,7 @@ spring:
             provider: school-provider
             client-id : client-school
             client-secret : secret
-            client-authentication-method : post
+            client-authentication-method : basic
             authorization-grant-type: authorization_code
             scope : profile
             client-name : Login Client
