@@ -12,7 +12,7 @@ spring:
           login-client:
             provider: school-provider
             client-id : client-school
-            client-secret : {cipher}8c251c8e629a3a0d7e3286956c8383e37fa3624f8e4148858367c2dc74076dc6
+            client-secret : {cipher}894966f3299edc9fe48fd6bef4b7df59d239a0a6b1e644382117b3d4ee8b26d3
             client-authentication-method : basic
             authorization-grant-type: authorization_code
             scope : profile
