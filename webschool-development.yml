@@ -24,6 +24,9 @@ spring:
             token-uri: http://sushi-security:8764/oauth/token
             user-info-uri : http://sushi-security:8764/resources/userinfo
             user-name-attribute : name   
+logging:
+  level:
+    org.springframework.security: DEBUG            
 
 eureka:
   client:
