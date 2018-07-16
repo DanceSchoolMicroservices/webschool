@@ -20,9 +20,9 @@ spring:
             redirect-uri-template : "{baseUrl}/login/oauth2/code/{registrationId}"
         provider:
           school-provider:
-            authorization-uri: http://sushi-security:8764/oauth/authorize
-            token-uri: http://sushi-security:8764/oauth/token
-            user-info-uri : http://sushi-security:8764/resources/userinfo
+            authorization-uri: http://school-security:8764/oauth/authorize
+            token-uri: http://school-security:8764/oauth/token
+            user-info-uri : http://school-security:8764/resources/userinfo
             user-name-attribute : name   
 logging:
   level:
