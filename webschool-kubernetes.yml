@@ -1,1 +1,27 @@
-
+spring:
+  thymeleaf:
+   cache: true
+   mode: HTML
+  security:
+    oauth2:
+      client:
+        registration:
+          login-client:
+            provider: school-provider
+            client-id : client-school
+            client-secret : '{cipher}894966f3299edc9fe48fd6bef4b7df59d239a0a6b1e644382117b3d4ee8b26d3'
+            client-authentication-method : basic
+            authorization-grant-type: authorization_code
+            scope : profile
+            client-name : Customer login
+            redirect-uri-template : "{baseUrl}/login/oauth2/code/{registrationId}"
+        provider:
+          school-provider:
+            authorization-uri: http://192.168.99.1:8764/oauth/authorize
+            token-uri: http://192.168.99.1:8764/oauth/token
+            user-info-uri : http://192.168.99.1:8764/resources/userinfo
+            user-name-attribute : name   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-school:8761/eureka/    
